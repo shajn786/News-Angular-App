@@ -10,39 +10,42 @@
             </div>
             <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                 <label for="" class="form-label">Id</label>
-                <input  type="text" class="form-control">
+                <input name ="id" [(ngModel)] ="id"  type="text" class="form-control">
             </div>
             <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                 <label for="" class="form-label">Name</label>
-                <input  type="text" class="form-control">
+                <input name ="name" [(ngModel)] ="name"  type="text" class="form-control">
+            </div>
+            <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <label for="" class="form-label">Author</label>
+                <input name ="author" [(ngModel)]="author"   type="text" class="form-control">
             </div>
             <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                 <label for="" class="form-label">Title</label>
-                <textarea   id="" cols="30" rows="5" class="form-control"></textarea>
+                <textarea name ="tittle" [(ngModel)] ="title"   id="" cols="30" rows="5" class="form-control"></textarea>
             </div>
             <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                 <label for="" class="form-label">Description</label>
-                <input  type="text" class="form-control">
+                <input name ="description" [(ngModel)] ="description" type="text" class="form-control">
             </div>
             <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                 <label for="" class="form-label">Url</label>
-                <input type="text" class="form-control">
+                <input name="url" [(ngModel)]="url" type="text" class="form-control">
             </div>
             <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                 <label for="" class="form-label">Url to Image</label>
-                <input  type="text" class="form-control">
+                <input name ="urlToImage" [(ngModel)]="urlToImage"  type="text" class="form-control">
             </div>
             <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                 <label for="" class="form-label">Published At</label>
-                <input  type="text" class="form-control">
+                <input name ="publishedAt" [(ngModel)]="publishedAt"   type="text" class="form-control">
             </div>
             <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                 <label for="" class="form-label">Content</label>
-                <input  type="text" class="form-control">
+                <input name ="content" [(ngModel)]="content"   type="text" class="form-control">
             </div>
-            <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-                <label for="" class="form-label">Content</label>
-                <input  type="text" class="form-control">
+            <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <button (click)="readvalues()" class="btn btn-success">Add</button>
             </div>
             
           </div>
